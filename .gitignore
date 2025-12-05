@@ -1,0 +1,80 @@
+# ===========================================
+# Vivado Project Files (generated/cache)
+# ===========================================
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.hbs/
+*.Xil/
+.Xil/
+*.str
+*.jou
+*.log
+*.wdb
+*.pb
+*.dmp
+
+# Backup Vivado projects
+*.newcache/
+*.newhw/
+*.newip/
+*.newruns/
+
+# ===========================================
+# Compiled/Generated Files
+# ===========================================
+*.elf
+*.bin
+*.hex
+*.dis
+*.o
+*.a
+
+# Generated memory files (rebuild from source)
+instr_mem.vh
+boot_mem.vh
+
+# ===========================================
+# Simulation Outputs
+# ===========================================
+sim_debug/xsim.dir/
+sim_debug/*.wdb
+sim_debug/*.log
+sim_debug/*.jou
+sim_debug/*.pb
+sim_debug/*.backup.*
+sim_run/
+xsim.dir/
+
+# ===========================================
+# Editor/OS Files
+# ===========================================
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.bak
+
+# ===========================================
+# Temp/Debug Files
+# ===========================================
+hs_err_*.dmp
+hs_err_*.log
+dfx_runtime.txt
+*.backup.jou
+*.backup.log
+
+# ===========================================
+# Keep these patterns (override ignores)
+# ===========================================
+!firmware/**/*.c
+!firmware/**/*.h
+!firmware/**/*.s
+!firmware/**/*.S
+!firmware/**/*.ld
+!firmware/**/*.sh
+!firmware/**/*.py
+
