@@ -206,11 +206,19 @@ xsim tb_cpu_behav -t tb_cpu_fast.tcl
 
 ## 📈 Resource Utilization (Artix-7 100T)
 
-| Resource | Used | Available | Utilization |
-|----------|------|-----------|-------------|
-| LUTs | ~2,500 | 63,400 | 4% |
-| FFs | ~1,200 | 126,800 | 1% |
-| BRAM | 8 | 135 | 6% |
+| Resource | Used   | Available | Utilization |
+|----------|--------|-----------|-------------|
+| LUT      | 18,858 | 63,400    | **29.74%**  |
+| LUTRAM   | 8,240  | 19,000    | **43.37%**  |
+| FF       | 3,109  | 126,800   | **2.45%**   |
+| IO       | 8      | 210       | **3.81%**   |
+| BUFG     | 2      | 32        | **6.25%**   |
+
+### Design Highlights
+- **30% LUT utilization**: Full RV32I core with FreeRTOS scheduler and interrupt handling
+- **43% LUTRAM**: Efficient distributed RAM usage for stack and system memory
+- **Timing met at 100 MHz**: Fully functional with room for future expansions
+- **70% headroom**: Available resources for security features, caches, or additional peripherals
 
 ---
 
