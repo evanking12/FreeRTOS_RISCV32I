@@ -246,19 +246,6 @@ taskEXIT_CRITICAL();
 
 ---
 
-## Interview Talking Points
-
-**Top 5 bugs to discuss:**
-
-1. **Reset Sync** - "mtvec was wrong because pipeline stages exited reset at different times - classic async vs sync reset issue"
-
-2. **CSR Priority** - "Two Verilog if-blocks both firing on same cycle, required understanding hardware parallelism"
-
-3. **IRQ Blocking** - "Added system_op_in_pipeline to block interrupts during mret - race condition in hardware"
-
-4. **Critical Pointer** - "Undefined symbol in assembly caused random memory corruption after thousands of iterations"
-
-5. **mret Atomicity** - "Had to understand that mret atomically restores MIE from MPIE, can't manually enable interrupts before"
 
 
 
